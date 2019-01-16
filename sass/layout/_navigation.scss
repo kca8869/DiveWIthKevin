@@ -1,5 +1,7 @@
 .header-nav{
-  position: sticky;
+  position: fixed;
+  width: 100%;
+
   &_list{
     display: flex;
     justify-content: space-around;

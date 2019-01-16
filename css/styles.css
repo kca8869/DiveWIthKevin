@@ -1,5 +1,15 @@
+.header-1 {
+  font-family: "bulgattiregular", sans-serif;
+  font-size: 5rem; }
+
+.header-main {
+  font-family: "bulgattiregular", sans-serif;
+  color: #1B2845;
+  font-size: 8rem; }
+
 .header-2 {
-  font-family: "bulgattiregular";
+  font-family: "bigger_love_demoregular", sans-serif;
+  color: #1B2845;
   font-size: 5rem; }
 
 *,
@@ -18,8 +28,36 @@ body {
 img {
   width: 100%; }
 
+.header {
+  background-image: url("/imgs/baitballanddiver.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -2; }
+  .header::after {
+    content: "";
+    display: inline;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(204, 218, 209, 0.2);
+    z-index: -1; }
+  .header_box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+
 .header-nav {
-  position: sticky; }
+  position: fixed;
+  width: 100%; }
   .header-nav_list {
     display: flex;
     justify-content: space-around; }
@@ -28,3 +66,8 @@ img {
   .header-nav_link {
     text-decoration: none;
     color: #1B2845; }
+
+body {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr; }
