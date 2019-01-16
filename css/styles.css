@@ -1,0 +1,30 @@
+.header-2 {
+  font-family: "bulgattiregular";
+  font-size: 5rem; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  position: relative; }
+
+img {
+  width: 100%; }
+
+.header-nav {
+  position: sticky; }
+  .header-nav_list {
+    display: flex;
+    justify-content: space-around; }
+  .header-nav_item {
+    list-style: none; }
+  .header-nav_link {
+    text-decoration: none;
+    color: #1B2845; }

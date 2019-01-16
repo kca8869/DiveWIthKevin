@@ -1,0 +1,14 @@
+.header-nav{
+  position: sticky;
+  &_list{
+    display: flex;
+    justify-content: space-around;
+  }
+  &_item{
+    list-style: none;
+  }
+  &_link{
+    text-decoration: none;
+    color: $secondary;
+  }
+}
