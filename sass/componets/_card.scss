@@ -1,0 +1,32 @@
+.card{
+  margin: 3rem;
+  display: grid;
+  grid-gap: $card-gap;
+  grid-template-columns: 1fr 1fr;
+  background-position: center;
+  background-size: cover;
+  padding: $card-gap;
+
+
+  &__heading{
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 5rem 0;
+  }
+  &__text{
+    grid-column: 1/-1;
+    padding: 3rem;
+    margin-bottom: 10rem;
+  }
+  &__img{
+    @include hover;
+  }
+
+  &--1{
+    background-image: url("/imgs/Reef_opt.jpg");
+  }
+
+  &--2{
+    background-image: url("/imgs/sealion.jpg");
+  }
+}

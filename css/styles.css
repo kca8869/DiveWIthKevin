@@ -1,6 +1,6 @@
 .header-1 {
   font-family: "bulgattiregular", sans-serif;
-  font-size: 5rem; }
+  font-size: 4rem; }
 
 .header-main {
   font-family: "bulgattiregular", sans-serif;
@@ -11,6 +11,11 @@
   font-family: "bigger_love_demoregular", sans-serif;
   color: #1B2845;
   font-size: 5rem; }
+
+.text {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #1B2845;
+  font-size: 2rem; }
 
 *,
 *::before,
@@ -28,16 +33,66 @@ body {
 img {
   width: 100%; }
 
+.collage {
+  position: relative; }
+  .collage_img {
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    transition: all .5s; }
+    .collage_img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 7rem black;
+      z-index: 1; }
+    .collage_img:hover {
+      z-index: 1; }
+    .collage_img--3 {
+      left: 0;
+      top: 8rem; }
+    .collage_img--2 {
+      right: 4rem;
+      top: 10rem; }
+    .collage_img--1 {
+      left: 12rem;
+      top: 20rem; }
+
+.card {
+  margin: 3rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem; }
+  .card__heading {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 5rem 0; }
+  .card__text {
+    grid-column: 1/-1;
+    padding: 3rem;
+    margin-bottom: 10rem; }
+  .card__img {
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    transition: all .5s; }
+    .card__img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 7rem black;
+      z-index: 1; }
+  .card--1 {
+    background-image: url("/imgs/Reef_opt.jpg"); }
+  .card--2 {
+    background-image: url("/imgs/sealion.jpg"); }
+
 .header {
   background-image: url("/imgs/baitballanddiver.jpg");
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: -2; }
+  justify-content: space-around;
+  position: relative; }
   .header::after {
     content: "";
     display: inline;
@@ -46,18 +101,20 @@ img {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(204, 218, 209, 0.2);
-    z-index: -1; }
+    background-color: rgba(204, 218, 209, 0.2); }
   .header_box {
+    padding: 5rem;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    z-index: 2; }
 
 .header-nav {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 20; }
   .header-nav_list {
     display: flex;
     justify-content: space-around; }
@@ -65,9 +122,47 @@ img {
     list-style: none; }
   .header-nav_link {
     text-decoration: none;
-    color: #1B2845; }
+    color: #1B2845;
+    text-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s; }
+    .header-nav_link:hover {
+      font-size: 4.5rem;
+      text-shadow: 0 0 7rem black; }
 
 body {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 2fr; }
+
+.about-me {
+  display: flex;
+  padding: 0 10rem 20rem 10rem;
+  background-color: #CCDAD1;
+  margin-top: -8vh;
+  transform: skewY(4deg);
+  z-index: -1; }
+  .about-me_container {
+    width: 50%;
+    padding: 5rem;
+    transform: skewY(-4deg); }
+
+.tours {
+  margin-top: -10rem;
+  padding: 0 5rem; }
+  .tours__header-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+  .tours__header {
+    flex: 3;
+    z-index: 2;
+    padding: 5rem 10rem;
+    text-align: center; }
+  .tours__container {
+    display: flex; }
+
+.cir-img {
+  flex-basis: auto;
+  display: inline-block;
+  width: 40%;
+  clip-path: circle(40%); }

@@ -1,16 +1,23 @@
 .header-1{
   font-family: $font-primary;
-  font-size: 5rem;
+  font-size: $font-size-1;
 }
 
 .header-main{
   font-family: $font-primary;
   color:$secondary;
-  font-size:8rem;
+  font-size:$font-size-main;
 }
 
 .header-2{
   font-family: $font-secondary;
   color:$secondary;
-  font-size:5rem;
+  font-size:$font-size-2;
+
+}
+
+.text{
+  font-family: $font-text;
+  color: $secondary;
+  font-size: $font-size-text;
 }

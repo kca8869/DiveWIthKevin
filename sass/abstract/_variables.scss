@@ -1,5 +1,6 @@
 // colors
 $white:#fff;
+$black:#000;
 $background-light:#CCDAD1;
 $primary:#5899E2;
 $secondary:#1B2845;
@@ -10,3 +11,15 @@ $background-med:#707070;
 $font-text:"Comic Sans MS", cursive, sans-serif;
 $font-primary:'bulgattiregular',sans-serif;
 $font-secondary:'bigger_love_demoregular',sans-serif;
+$font-size-main:8rem;
+$font-size-1:4rem;
+$font-size-hover:4.5rem;
+$font-size-2:5rem;
+$font-size-text:2rem;
+//shadows
+$shadow-sm:0 0 5rem rgba($black,.5);
+$shadow-lg:0 0 7rem rgba($black,1);
+//transitions
+$transition:all .5s;
+//misc
+$card-gap:2rem;

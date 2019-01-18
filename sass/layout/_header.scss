@@ -2,12 +2,13 @@
   background-image: url("/imgs/baitballanddiver.jpg");
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  //align-items: flex-start;
   position: relative;
-  z-index: -2;
+//  z-index: -2;
+  // clip-path:polygon(0 0, 100% 0, 100% 110vh, 0 100vh);
 
   &::after{
 
@@ -19,13 +20,15 @@
     left: 0;
     top: 0;
     background-color: rgba($background-light,.2);
-   z-index: -1;
+  //  z-index: 1;
   }
   &_box{
+    padding: 5rem;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    z-index: 2;
   }
 }

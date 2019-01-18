@@ -1,1 +1,49 @@
+.about-me{
+  display: flex;
 
+  padding: 0 10rem 20rem 10rem;
+  background-color: $background-light;
+  margin-top: -8vh;
+  // clip-path:polygon(0 0,100% 10vh, 100% 100%, 0 90vh);
+  transform: skewY(4deg);
+  z-index: -1;
+
+
+  &_container{
+    width: 50%;
+    padding: 5rem;
+    transform: skewY(-4deg);
+
+  }
+}
+
+.tours{
+  margin-top: -10rem;
+
+  padding: 0 5rem;
+  &__header-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__header{
+    flex: 3;
+    z-index: 2;
+    padding: 5rem 10rem;
+    text-align: center;
+  }
+  &__container{
+    display: flex;
+  }
+}
+
+.cir-img{
+  flex-basis: auto;
+  display: inline-block;
+  width: 40%;
+  clip-path:circle(40%);
+  &__img{
+
+
+  }
+}

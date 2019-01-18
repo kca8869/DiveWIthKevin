@@ -1,7 +1,7 @@
 .header-nav{
   position: fixed;
   width: 100%;
-
+  z-index: 20;
   &_list{
     display: flex;
     justify-content: space-around;
@@ -12,5 +12,11 @@
   &_link{
     text-decoration: none;
     color: $secondary;
+    text-shadow: $shadow-sm;
+    transition: $transition;
+    &:hover{
+      font-size: $font-size-hover;
+      text-shadow: $shadow-lg;
+    }
   }
 }

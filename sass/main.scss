@@ -1,9 +1,12 @@
-@import "abstract/mixins";
 @import "abstract/variables";
+@import "abstract/mixins";
 @import "abstract/utilites";
 
 @import "base/typography";
 @import "base/reset";
+
+@import "componets/collage";
+@import "componets/card";
 
 @import "layout/footer";
 @import "layout/header";
