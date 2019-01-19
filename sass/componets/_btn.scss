@@ -1,0 +1,25 @@
+.btn{
+  display: inline-block;
+  padding: 1rem;
+  margin: 5rem;
+  text-transform: capitalize;
+  color: $primary;
+  background-color: transparent;
+  font-size: $font-size-text;
+  text-shadow: $shadow-lg;
+  text-decoration: none;
+  font-family: $font-text;
+  transition: $transition;
+  &:hover{
+    color: $secondary;
+    background-color: $primary;
+  //  font-size: 3rem;
+    box-shadow: $shadow-sm;
+  }
+
+  &--card{
+    margin: 0;
+    color: $secondary;
+    align-self: flex-end;
+  }
+}

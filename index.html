@@ -8,20 +8,27 @@
     <title>Dive With Kevin</title>
   </head>
   <body>
-    <div class="header-nav">
+    <!-- img modal -->
+    <div class="modal" id="modal">
+      <div class="modal__figure">
+        <img class="modal__img" id="modal__img"src="" alt="">
+      </div>
+    </div>
+    <!-- end img modal -->
+    <div class="header-nav" id="header-nav">
       <ul class="header-nav_list">
         <li class="header-nav_item">
-          <a href="#about" class="header-nav_link header-1">About</a>
+          <a href="#about" class="header-nav_link navbar-text">About</a>
         </li>
         <li class="header-nav_item">
-          <a href="#tours" class="header-nav_link header-1">Tours</a>
+          <a href="#tours" class="header-nav_link navbar-text">Tours</a>
         </li>
         <li class="header-nav_item">
-          <a href="#" class="header-nav_link header-1">Contact</a>
+          <a href="#contact" class="header-nav_link navbar-text">Contact</a>
         </li>
       </ul>
     </div>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header_box">
         <h1 class="header_title header-main">Dive With Kevin</h1>
         <h2 class="header_subtitle header-2">Professional SCUBA diving tours in Cabo San Lucas</h2>
@@ -32,6 +39,7 @@
         <div class="about-me_container">
           <h3 class="header-2">About Me</h3>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#" class="btn">more about me ►</a>
         </div>
         <div class="about-me_container">
           <div class="collage">
@@ -40,6 +48,7 @@
             <img class="collage_img collage_img--3" src="imgs/kevinSelfieoutside.jpg" alt="kevin taking a selfie outside">
           </div>
         </div>
+
       </section>
       <section class="tours" id="tours">
         <div class="tours__header-box">
@@ -48,27 +57,61 @@
           </figure>
           <h3 class="tours__header header-2">Dive Tours in Cabo San Lucas</h3>
         </div>
-        <div class="tours__container">
+        <!-- <div class="tours__container"> -->
           <div class="card card--1">
-            <h2 class="card__heading header-1">Tourist Cooridor</h2>
-            <p class="card__text text">Bright corals, fun reefs, passing rays and more 30 to 45 minutes away.</p>
+            <div class="card__text-box">
+              <h2 class="card__heading header-1">Tourist Cooridor</h2>
+              <p class="card__text text">Bright corals, fun reefs, passing rays and more 30 to 45 minutes away.</p>
+              <a href="#" class="btn btn--card">Cooridor Dive Sites ►</a>
+            </div>
+
             <img class="card__img" src="imgs/reeffansandfish.jpg" alt="tropical reef with fans">
             <img class="card__img" src="imgs/mexicanlookdowns.jpg" alt="a group of 10 sealions swimming by underwater">
             <img class="card__img" src="imgs/puffer.jpg" alt="close up of a ballon pufferfish swimmin underwater">
             <img class="card__img" src="imgs/school.jpg" alt="close up of a queen anglefish swimming underwater">
           </div>
           <div class="card card--2">
-            <h2 class="card__heading header-1">San Lucas Marine Park</h2>
-            <p class="card__text text">Deep water canyon, sea lions and friendly fish only 5 minutes from the marina.</p>
+            <div class="card__text-box">
+              <h2 class="card__heading header-1">San Lucas Marine Park</h2>
+              <p class="card__text text">Deep water canyon, sea lions and friendly fish only 5 minutes from the marina.</p>
+              <a href="#" class="btn btn--card">Marine Park Dive Sites ►</a>
+            </div>
+
             <img class="card__img" src="imgs/octopus.jpg" alt="tropical reef with fans">
             <img class="card__img" src="imgs/manysealions.jpg" alt="a group of 10 sealions swimming by underwater">
             <img class="card__img" src="imgs/whitetip.jpg" alt="close up of a ballon pufferfish swimmin underwater">
             <img class="card__img" src="imgs/morey.jpg" alt="close up of a queen anglefish swimming underwater">
 
           </div>
-        </div>
+        <!-- </div> -->
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="header-2 contact__header">Contact Me</h2>
+        <form class="form" action="index.html" method="post">
+          <input class="form__input form__input--name" type="text" name="name" value="" placeholder="NAME">
+          <input class="form__input form__input--email" type="email" name="email" value="" placeholder="EMAIL">
+          <textarea class="form__input form__input--message" type="text" name="message" rows="10" value="" placeholder="MESSAGE"></textarea>
+          <a class="btn">Send ►</a>
+        </form>
       </section>
     </main>
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer-text" href="#">About Page</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer-text" href="#">Tours Page</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer-text" href="#">Contact Page</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer-text" href="#">Home Page</a>
+        </li>
+      </ul>
+      <p class="footer-text footer__copyright">© Kevin Armijo 2019</p>
+    </footer>
     <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>

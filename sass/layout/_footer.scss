@@ -1,1 +1,10 @@
-
+.footer{
+  background-image: linear-gradient(to right,$secondary 20%, transparent 30%),
+                    url("/imgs/whitetip2.jpg");
+  background-size: cover;
+  background-position: left;
+  padding: 10rem 20rem;
+  &__copyright{
+    padding: 1rem;
+  }
+}

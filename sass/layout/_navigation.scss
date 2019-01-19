@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   z-index: 20;
+  transition: $transition;
   &_list{
     display: flex;
     justify-content: space-around;
@@ -13,10 +14,25 @@
     text-decoration: none;
     color: $secondary;
     text-shadow: $shadow-sm;
-    transition: $transition;
+    transition: $transition-underline;
     &:hover{
-      font-size: $font-size-hover;
-      text-shadow: $shadow-lg;
+      // font-size: $font-size-hover;
+      // text-shadow: $shadow-lg;
+      border-bottom: solid 2px $secondary;
+    }
+  }
+}
+
+.footer__nav{
+  list-style: none;
+  &-item{
+    padding: 1rem;
+  }
+  &-link{
+    text-decoration: none;
+    transition: $transition-underline;
+    &:hover{
+      border-bottom: solid 2px $primary;
     }
   }
 }

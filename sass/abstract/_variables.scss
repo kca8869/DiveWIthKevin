@@ -12,6 +12,7 @@ $font-text:"Comic Sans MS", cursive, sans-serif;
 $font-primary:'bulgattiregular',sans-serif;
 $font-secondary:'bigger_love_demoregular',sans-serif;
 $font-size-main:8rem;
+$font-size-nav:3rem;
 $font-size-1:4rem;
 $font-size-hover:4.5rem;
 $font-size-2:5rem;
@@ -21,5 +22,8 @@ $shadow-sm:0 0 5rem rgba($black,.5);
 $shadow-lg:0 0 7rem rgba($black,1);
 //transitions
 $transition:all .5s;
+$transition-underline:all .2s;
 //misc
 $card-gap:2rem;
+//breakpoints
+$tab:1000px;

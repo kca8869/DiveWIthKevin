@@ -1,3 +1,8 @@
+.navbar-text{
+  font-family: $font-primary;
+  font-size: $font-size-nav;
+}
+
 .header-1{
   font-family: $font-primary;
   font-size: $font-size-1;
@@ -20,4 +25,10 @@
   font-family: $font-text;
   color: $secondary;
   font-size: $font-size-text;
+}
+
+.footer-text{
+  color: $background-light;
+  font-size: $font-size-text;
+  font-family: $font-text;
 }
