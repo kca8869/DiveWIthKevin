@@ -1,0 +1,344 @@
+.bgtransparent {
+  background-color: transparent !important; }
+
+.navbar-text {
+  font-family: "bulgattiregular", sans-serif;
+  font-size: 3rem; }
+
+.header-1 {
+  font-family: "bulgattiregular", sans-serif;
+  font-size: 4rem; }
+
+.header-main {
+  font-family: "bulgattiregular", sans-serif;
+  color: #1B2845;
+  font-size: 8rem; }
+
+.header-2 {
+  font-family: "bigger_love_demoregular", sans-serif;
+  color: #1B2845;
+  font-size: 5rem; }
+
+.text {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #1B2845;
+  font-size: 2rem; }
+
+.footer-text {
+  color: #CCDAD1;
+  font-size: 2rem;
+  font-family: "Comic Sans MS", cursive, sans-serif; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 1000px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 40%; } }
+
+body {
+  position: relative; }
+
+img {
+  width: 100%; }
+
+.collage {
+  position: relative; }
+  @media only screen and (max-width: 1000px) {
+    .collage {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; } }
+  .collage_img {
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    transition: all .5s; }
+    .collage_img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 7rem black;
+      z-index: 1; }
+    @media only screen and (max-width: 1000px) {
+      .collage_img {
+        position: relative;
+        width: 100%; } }
+    .collage_img:hover {
+      z-index: 1; }
+    .collage_img--3 {
+      left: 0;
+      top: 8rem; }
+      @media only screen and (max-width: 1000px) {
+        .collage_img--3 {
+          top: 0; } }
+    .collage_img--2 {
+      right: 4rem;
+      top: 10rem; }
+      @media only screen and (max-width: 1000px) {
+        .collage_img--2 {
+          top: 0;
+          right: 0; } }
+    .collage_img--1 {
+      left: 12rem;
+      top: 20rem; }
+      @media only screen and (max-width: 1000px) {
+        .collage_img--1 {
+          top: 0;
+          left: 0; } }
+
+.card {
+  margin: 3rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+  .card::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(204, 218, 209, 0.3); }
+  @media only screen and (max-width: 600px) {
+    .card {
+      margin: 3rem 0; } }
+  .card__text-box {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/-1;
+    margin-bottom: 100px;
+    z-index: 3; }
+  .card__heading {
+    text-align: center;
+    padding: 5rem 0; }
+  .card__text {
+    padding: 0 3rem; }
+  .card__img {
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+    z-index: 3; }
+    .card__img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 7rem black;
+      z-index: 1; }
+  .card--1 {
+    background-image: url("/imgs/Reef_opt.jpg"); }
+  .card--2 {
+    background-image: url("/imgs/sealion.jpg"); }
+
+.btn {
+  display: inline-block;
+  padding: 1rem;
+  margin: 5rem;
+  text-transform: capitalize;
+  color: #5899E2;
+  background-color: transparent;
+  font-size: 2rem;
+  text-shadow: 0 0 7rem black;
+  text-decoration: none;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  transition: all 0.5s; }
+  .btn:hover {
+    color: #1B2845;
+    background-color: #5899E2;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5); }
+  .btn--card {
+    margin: 0;
+    color: #1B2845;
+    align-self: flex-end; }
+
+.form__input {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  background-color: rgba(204, 218, 209, 0.5);
+  border: none;
+  outline: none;
+  transition: all 0.5s; }
+  .form__input:focus {
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    border-bottom: solid 10px #5899E2; }
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(27, 40, 69, 0.8);
+  overflow: auto; }
+  .modal__figure {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem 0; }
+
+.footer {
+  background-image: linear-gradient(to right, #1B2845 20%, transparent 30%), url("/imgs/whitetip2.jpg");
+  background-size: cover;
+  background-position: left;
+  padding: 10rem 20rem; }
+  .footer__copyright {
+    padding: 1rem; }
+
+.header {
+  background-image: url("/imgs/baitballanddiver.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  justify-content: space-around;
+  position: relative; }
+  .header::after {
+    content: "";
+    display: inline;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(204, 218, 209, 0.2); }
+  .header_box {
+    padding: 5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2; }
+
+.header-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  transition: all 0.5s; }
+  @media only screen and (max-width: 600px) {
+    .header-nav {
+      top: -100%; } }
+  .header-nav_list {
+    display: flex;
+    justify-content: space-around; }
+  .header-nav_item {
+    list-style: none; }
+  .header-nav_link {
+    text-decoration: none;
+    color: #1B2845;
+    text-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    transition: all 0.2s; }
+    .header-nav_link:hover {
+      border-bottom: solid 2px #1B2845; }
+
+.mobile-bars {
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 25;
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 2px;
+  padding: 15px; }
+  @media only screen and (max-width: 600px) {
+    .mobile-bars {
+      display: inline-block; } }
+  .mobile-bars:hover .mobile-bars__icon::after {
+    top: 12px; }
+  .mobile-bars:hover .mobile-bars__icon::before {
+    top: -12px; }
+  .mobile-bars__icon {
+    position: relative;
+    background-color: black;
+    display: inline-block;
+    width: 20px;
+    height: 3px; }
+    .mobile-bars__icon::before, .mobile-bars__icon::after {
+      content: "";
+      background-color: inherit;
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      top: -10px;
+      left: 0; }
+    .mobile-bars__icon::after {
+      top: 10px; }
+
+.footer__nav {
+  list-style: none; }
+  .footer__nav-item {
+    padding: 1rem; }
+  .footer__nav-link {
+    text-decoration: none;
+    transition: all 0.2s; }
+    .footer__nav-link:hover {
+      border-bottom: solid 2px #5899E2; }
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10rem 10rem 10rem;
+  background-color: #CCDAD1;
+  margin-top: -8vh;
+  transform: skewY(4deg);
+  z-index: -1; }
+  @media only screen and (max-width: 1000px) {
+    .about-me {
+      grid-template-columns: 1fr; } }
+  .about-me_container {
+    padding: 5rem;
+    transform: skewY(-4deg); }
+    @media only screen and (max-width: 1000px) {
+      .about-me_container {
+        padding: 0; } }
+
+.tours {
+  margin-top: -10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 5rem; }
+  @media only screen and (max-width: 1000px) {
+    .tours {
+      grid-template-columns: 1fr; } }
+  @media only screen and (max-width: 1000px) {
+    .tours {
+      padding: 0; } }
+  .tours__header-box {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+    @media only screen and (max-width: 1000px) {
+      .tours__header-box {
+        display: flex; } }
+  .tours__header {
+    z-index: 2;
+    padding: 5rem 10rem;
+    text-align: center; }
+
+.cir-img {
+  clip-path: circle(40%); }
+  @media only screen and (max-width: 1000px) {
+    .cir-img {
+      display: none; } }
+
+.contact {
+  background-image: linear-gradient(4deg, transparent 89%, #fff 90%), url("/imgs/Goatfish.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 30rem 10rem 10rem 10rem;
+  margin-top: -20rem;
+  overflow: visible; }
+  .contact__header {
+    text-align: center; }
